@@ -1,15 +1,27 @@
----
-title: QnAModel
-emoji: 🔥
-colorFrom: gray
-colorTo: pink
-sdk: gradio
-sdk_version: 5.46.1
-app_file: app.py
-pinned: false
+# 🧠💬 QnA Model  
+
+A Question Answering (QnA) system built with **PyTorch Lightning**, **Hugging Face Transformers**, and **Gradio**.  
+The project fine-tunes the pretrained **RoBERTa (SQuAD2)** model on custom QnA data, with MLflow tracking, checkpointing, and early stopping.  
+
+🌐 **Live Demo:** [Try it on Hugging Face Spaces 🚀](https://huggingface.co/spaces/Samin7479/QnAModel)
+
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+## ✨ Features
+- 🔥 Pretrained transformer backbone: `deepset/roberta-base-squad2`  
+- ⚡ Fine-tuning with PyTorch Lightning  
+- 📂 Custom dataset loading with `QnADataset`  
+- 📊 Logging & experiment tracking using **MLflow**  
+- 💾 Checkpointing & Early Stopping  
+- 🎨 Interactive Gradio UI + Deployed on Hugging Face Spaces  
 
-🌐 Try the live demo on Hugging Face Spaces: [QnA Model App](https://huggingface.co/spaces/Samin7479/QnAModel)
+---
 
+## 📦 Installation
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/Yasar8936/QnA-Model.git
+cd QnA-Model
+pip install -r requirements.txt
